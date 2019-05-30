@@ -1,0 +1,28 @@
+{
+  "name": "@sapper-dragon/json",
+  "version": "0.0.7",
+  "description": "Decorate your Sapper project with generated dummy JSON.",
+  "license": "MIT",
+  "author": "Robert Hall <langbert@gmail.com> (http://arxpoetica.com/)",
+  "homepage": "https://github.com/sapper-dragon/json#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapper-dragon/json.git"
+  },
+  "keywords": [
+    "svelte",
+    "sapper",
+    "json"
+  ],
+  "bugs": {
+    "url": "https://github.com/sapper-dragon/json/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ansi-colors": "3.2.4"
+  },
+  "devDependencies": {}
+}

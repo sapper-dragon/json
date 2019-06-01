@@ -22,7 +22,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "ansi-colors": "3.2.4"
+    "ansi-colors": "3.2.4",
+    "esm": "3.2.25"
   },
   "devDependencies": {}
 }

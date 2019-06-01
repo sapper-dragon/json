@@ -5,7 +5,7 @@ import { blueBright, red } from 'ansi-colors'
 export const change = async({ config, filepath }) => {
 	try {
 		const { input, filter, outputStatic } = config.json
-		const { stdout: unparsed } = await exec(`node -r ./node_modules/@sapper-dragon/json/node_modules/esm/index.js -e "require('./${input}/${filepath}').compile()"`)
+		const { stdout: unparsed } = await exec(`node -r ./node_modules/esm/index.js -e "require('./${input}/${filepath}').compile()"`)
 		const reparsed = JSON.parse(unparsed)
 		const result = JSON.stringify(reparsed, null, '\t')
 		const path = `${outputStatic}/${filepath.replace(filter, '.json')}`

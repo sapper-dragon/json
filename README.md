@@ -16,7 +16,24 @@ This project requires the [@sapper-dragon/trimmings](https://github.com/sapper-d
 
 ### JSON Ipsum
 
-After installing, `@sapper-dragon/json` will watch for changes to `*.js` files in `src/trimmings/json`, and generate `*.json` in `static/json` based on the rules setup in each js file.
+After installing, `@sapper-dragon/json` will watch for changes to `*.js` files in `src/trimmings/json`, and generate a resulting `*.json` file in `static/json` based on the rules setup in your js file.
+
+Rules are simple. In your `src/trimmings/json/*.js` file, export a `compile` function like so:
+
+```js
+export const compile = () => {
+	const result = // create your json here...
+	console.log(JSON.stringify(result))
+}
+```
+
+Note the critical
+
+```js
+console.log(JSON.stringify(result))
+```
+
+at the end of the `compile` function. `@sapper-dragon/json` needs this to read the output of `compile` and save it to a `*.json` file. In other words, the rest of the contents of the `compile` function can be anything you like, as long as the logged result is valid stringified JSON data.
 
 ### Config
 

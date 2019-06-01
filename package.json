@@ -1,6 +1,6 @@
 {
   "name": "@sapper-dragon/json",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Decorate your Sapper project with generated dummy JSON.",
   "license": "MIT",
   "author": "Robert Hall <langbert@gmail.com> (http://arxpoetica.com/)",
